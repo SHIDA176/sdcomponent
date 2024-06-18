@@ -1,10 +1,21 @@
-import React from 'react'
-import Button from './pages/button'
+import React, { FC } from 'react'
+import { HashRouter, useRoutes } from 'react-router-dom'
+import { router } from './router/index'
 
-export default function app() {
+type Props = {
+  name?: string
+}
+
+const Routers = () => useRoutes(router)
+
+const App: FC<Props> = () => {
+
+
   return (
-    <div>
-      <Button/> 
-    </div>
+    <HashRouter>
+      <Routers />
+    </HashRouter>
   )
 }
+
+export default App;
