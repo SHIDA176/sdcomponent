@@ -11,7 +11,7 @@ export type ZHRouter = Array<RouteObject & extraBizObject>
 
 export const router: ZHRouter = [
   {
-    path: '/', element: <Home />, title: '首页', isShow: true,
+    path: '/component', element: <Home />, title: '首页', isShow: true,
     children: []
   }
 ]
