@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Button } from "../../components";
 import ButtonPage from './ButtonPage'
+import InputPage from './InputPage'
 import clsx from "clsx";
 
 const Home = () => {
@@ -59,6 +60,7 @@ const Home = () => {
 				</div>
         <div>
           {activeKey === 'button' ? <ButtonPage /> : ''}
+          {activeKey === 'input' ? <InputPage /> : ''}
         </div>
 			</div>
 		</div>
